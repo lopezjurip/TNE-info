@@ -42,11 +42,12 @@ This prints:
   regi_romano: 'INVALID' }
 ```
 
-[ci-image]: https://travis-ci.org/mrpatiwi/tne-info.svg
-[ci-url]: https://travis-ci.org/mrpatiwi/tne-info
+
+[ci-image]: https://travis-ci.org/mrpatiwi/TNE-info.svg
+[ci-url]: https://travis-ci.org/mrpatiwi/TNE-info
 [npm-image]: https://badge.fury.io/js/tne-info.svg
 [npm-url]: http://badge.fury.io/js/tne-info
 [dependencies-image]: https://david-dm.org/mrpatiwi/tne-info.svg
 [dependencies-url]: https://david-dm.org/mrpatiwi/tne-info
-[lint-image]: https://codeclimate.com/github/mrpatiwi/tne-info/badges/gpa.svg
-[lint-url]: https://codeclimate.com/github/mrpatiwi/tne-info
+[lint-image]: https://codeclimate.com/github/mrpatiwi/TNE-info/badges/gpa.svg
+[lint-url]: https://codeclimate.com/github/mrpatiwi/TNE-info
