@@ -3,6 +3,8 @@
 const cheerio = require('cheerio');
 const request = require('request-promise');
 
+const URL = 'http://163.247.67.247/tie/estados_tarjetas/tneEmitidas';
+
 function escapeRegExp(str) {
     return str.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
 }
@@ -20,15 +22,15 @@ function clean(val) {
 }
 
 function validate(rut, tne) {
-  rut = rut.split('/')
+  rut = rut.split('/');
   const seq = tne['pers_run'];
   const verif = tne['pers_dv_run'];
   return seq === rut[0] && verif === rut[1];
 }
 
 module.exports = function(rut) {
-  rut = rut.replace('-', '/').replace('.', '').replace(' ', '')
-  const url = `http://163.247.67.247/tie/estados_tarjetas/tneEmitidas/${rut}`;
+  rut = rut.replace('-', '/').replace('.', '').replace(' ', '');
+  const url = `${URL}/${rut}`;
 
   return request.get(url).then((body, resp) => {
     const $ = cheerio.load(body);

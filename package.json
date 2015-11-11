@@ -1,6 +1,6 @@
 {
   "name": "tne-info",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get TNE information from RUT",
   "main": "index.js",
   "scripts": {
